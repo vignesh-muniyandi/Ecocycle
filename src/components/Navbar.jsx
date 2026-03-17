@@ -33,7 +33,7 @@ function Navbar() {
         </div>
       </div>
 
-      <div className="main">ECOCYCLE</div>
+      
     </>
   );
 }

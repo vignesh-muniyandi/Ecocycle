@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+    background-color:green ;
+    height: 100vh;
+    color: white;
+    font-size: 80px;
+    justify-content: center;
+    align-items: center;
+    padding:20% 40%;
+}

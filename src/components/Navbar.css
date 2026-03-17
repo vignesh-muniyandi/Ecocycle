@@ -26,8 +26,7 @@
     display: flex;
     flex-direction: row;
     gap: 30px;
-    text-decoration: none;
-    list-style-type: none;
+     
     color: #838783;
     
 }
@@ -38,9 +37,15 @@
 .nav-list-items .nav-item{
     cursor: pointer;
     font-size: 18px bold;
+    text-decoration: none;
+    list-style-type: none;
+}
+.nav-list-items .nav-item a{
+    text-decoration: none;
+    color: #808680;
 }
 
-.nav-list-items .nav-item:hover{
+.nav-list-items .nav-item a:hover{
     color: #05f305;
 }
 
@@ -63,13 +68,4 @@
     cursor: pointer;
     background: linear-gradient(100deg, #0eb90e, #ebf1eb);
 }
-.main{
-    width: 100%;
-    background-color:green ;
-    height: 100vh;
-    color: white;
-    font-size: 80px;
-    justify-content: center;
-    align-items: center;
-    padding:20% 40%;
-}
+ 
