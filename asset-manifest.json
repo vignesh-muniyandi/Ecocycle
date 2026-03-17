@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/Ecocycle/static/css/main.e6c13ad2.css",
-    "main.js": "/Ecocycle/static/js/main.4617a785.js",
+    "main.css": "/Ecocycle/static/css/main.3947341a.css",
+    "main.js": "/Ecocycle/static/js/main.9b7a9a89.js",
     "static/js/453.e4d4932e.chunk.js": "/Ecocycle/static/js/453.e4d4932e.chunk.js",
+    "static/media/logo1.png": "/Ecocycle/static/media/logo1.3ea9c32dce85b54fc9af.png",
     "index.html": "/Ecocycle/index.html",
-    "main.e6c13ad2.css.map": "/Ecocycle/static/css/main.e6c13ad2.css.map",
-    "main.4617a785.js.map": "/Ecocycle/static/js/main.4617a785.js.map",
+    "main.3947341a.css.map": "/Ecocycle/static/css/main.3947341a.css.map",
+    "main.9b7a9a89.js.map": "/Ecocycle/static/js/main.9b7a9a89.js.map",
     "453.e4d4932e.chunk.js.map": "/Ecocycle/static/js/453.e4d4932e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.4617a785.js"
+    "static/css/main.3947341a.css",
+    "static/js/main.9b7a9a89.js"
   ]
 }
