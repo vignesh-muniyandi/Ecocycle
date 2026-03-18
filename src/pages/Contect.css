@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contect{
+    display: flex;
+    width: 100%;
+    height: auto;
+     padding: 50px 100px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: green;
+
+}
+
+.contect .contect-body{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px ;
+}
+.contect .contect-body .inner-body{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding: 20px 40px ;
+    gap: 10px;
+    color: aliceblue;
+}
+.contect .contect-body .inner-body h3{
+    font-size: 40px;
+}
+.contect .contect-body .inner-body p{
+    font-size: 1rem;
+    justify-content: center;
+}
+.contect .contect-body{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px ;
+}
+.contect .contect-body .inner-body1{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding: 20px 40px ;
+    margin-top: 10px;
+    gap: 10px;
+    color: aliceblue;
+}
+.contect .contect-body .inner-body1 h3{
+    font-size: 40px;
+}
+.contect .contect-body .inner-body1 p ,h5 {
+    font-size: 1rem;
+    justify-content: center;
+}
+.contect .contect-body2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px   ;
+}
+.contect .contect-body2 h1{
+    font-size: 40px;
+     color: aliceblue;
+}
+
+.contect .contect-body2 form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px ;
+}
+.contect .contect-body2 form  label{
+    color: white;
+    font-size: 20px;
+}
+.contect .contect-body2 form input{
+    padding: 10px 50px;
+    border-radius: 10px;
+    border: none;
+}
+.contect .contect-body2 form .btn{
+    padding: 10px 50px ;
+    border: none;
+    background: linear-gradient(to right , green ,yellow );
+    cursor: pointer;
+    box-shadow: 10px 8px 10px black;
+    transition: 0.5s ease;
+}
+.contect .contect-body2 form .btn:hover{
+    transform: scale(1.1);
+}
