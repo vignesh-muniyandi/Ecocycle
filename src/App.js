@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact"
 import Product from "./pages/Product"
 import { BrowserRouter,Route,Routes } from "react-router-dom";
+import CartPage from "./redux/CartPage";
 function App() {
   return (
     <div className="App">
@@ -17,6 +18,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/About" element={<About/>} />
           <Route path="/Product" element={<Product/>}/>
+          <Route path="/Cartpage" element={<CartPage/>}/>
          </Routes>
         <Footer/>
       </BrowserRouter>

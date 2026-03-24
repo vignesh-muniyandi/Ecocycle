@@ -32,6 +32,10 @@ function Navbar() {
           <input className="con-email" type="email" placeholder="Email" />
           <button className="btn">Login</button>
         </div>
+
+        <div>
+          <button><Link to="/Cartpage">Add Cart</Link></button>
+        </div>
       </div>
     </>
   );
