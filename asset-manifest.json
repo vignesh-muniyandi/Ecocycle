@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Ecocycle/static/css/main.5e6c07a0.css",
-    "main.js": "/Ecocycle/static/js/main.25dfd880.js",
+    "main.css": "/Ecocycle/static/css/main.97619eea.css",
+    "main.js": "/Ecocycle/static/js/main.30d29696.js",
     "static/js/453.e4d4932e.chunk.js": "/Ecocycle/static/js/453.e4d4932e.chunk.js",
     "static/media/cool-bicycle-studio.jpg": "/Ecocycle/static/media/cool-bicycle-studio.b9ba6933a8beb80fcfa7.jpg",
     "static/media/43044.jpg": "/Ecocycle/static/media/43044.0bf0cc9d8e7308f66cc9.jpg",
@@ -9,12 +9,12 @@
     "static/media/cycyle1.jpg": "/Ecocycle/static/media/cycyle1.035971c4d311dfb78d31.jpg",
     "static/media/logo1.png": "/Ecocycle/static/media/logo1.3ea9c32dce85b54fc9af.png",
     "index.html": "/Ecocycle/index.html",
-    "main.5e6c07a0.css.map": "/Ecocycle/static/css/main.5e6c07a0.css.map",
-    "main.25dfd880.js.map": "/Ecocycle/static/js/main.25dfd880.js.map",
+    "main.97619eea.css.map": "/Ecocycle/static/css/main.97619eea.css.map",
+    "main.30d29696.js.map": "/Ecocycle/static/js/main.30d29696.js.map",
     "453.e4d4932e.chunk.js.map": "/Ecocycle/static/js/453.e4d4932e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5e6c07a0.css",
-    "static/js/main.25dfd880.js"
+    "static/css/main.97619eea.css",
+    "static/js/main.30d29696.js"
   ]
 }
