@@ -3,6 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState ={
     cycleCartItems :JSON.parse(localStorage.getItem("cycleCartItems")) || [],
+   LikeCartItems  :JSON.parse(localStorage.getItem("LikeCartItems")) || [],
     totalAmount :0,
 }
 
@@ -23,6 +24,39 @@ const cartSlice =createSlice(
                 localStorage.setItem("cycleCartItems" ,JSON.stringify(state.cycleCartItems))
                 
             },
+            addFavourite:(state,action)=>{
+                const item =action.payload;
+                const existingItem=state.LikeCartItems.find(i => i.id ===item.id);
+
+                if(existingItem){
+                    existingItem.quantity +=1;
+                }else{
+                    state.LikeCartItems.push({...item ,quantity :1});
+                }
+                localStorage.setItem("LikeCartItems",JSON.stringify(state.LikeCartItems));
+            },
+
+            
+            addCartFromFavourite:( state,action)=>{
+            
+                 const item = action.payload;
+                 const existingItem = state.cycleCartItems.find(
+                   (i) => i.id === item.id,
+                 );
+
+                 if (existingItem) {
+                   existingItem.quantity += 1;
+                 } else {
+                   state.cycleCartItems.push({ ...item, quantity: 1 });
+                 }
+                   state.LikeCartItems = state.LikeCartItems.filter(
+                     (i) => i.id !== action.payload.id,
+                   );
+              localStorage.setItem(
+                "LikeCartItems",
+                JSON.stringify(state.LikeCartItems),
+              );
+            },
             updateQuantity:(state ,action)=>{
                 const {id ,change} =action.payload;
                 const item =state.cycleCartItems.find(i =>i.id ===id);
@@ -37,6 +71,16 @@ const cartSlice =createSlice(
                   "cycleCartItems",
                   JSON.stringify(state.cycleCartItems),
                 );
+
+            },
+            DisLikeCartProduct:(state ,action)=>{
+                 state.LikeCartItems = state.LikeCartItems.filter(
+                   (i) => i.id !== action.payload,
+                 );
+                 localStorage.setItem(
+                   "cycleCartItems",
+                   JSON.stringify(state.LikeCartItems),
+                 );
 
             },
             removeFromCart:(state ,action) =>{
@@ -59,5 +103,5 @@ const cartSlice =createSlice(
 );
 
 
-export  const {addToCart ,updateQuantity ,removeFromCart ,calculateTotal}=cartSlice.actions;
+export  const {addToCart ,updateQuantity ,removeFromCart ,calculateTotal ,addFavourite ,addCartFromFavourite ,DisLikeCartProduct}=cartSlice.actions;
 export default cartSlice.reducer;

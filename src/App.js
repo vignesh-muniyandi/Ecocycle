@@ -7,25 +7,27 @@ import Contact from "./pages/Contact"
 import Product from "./pages/Product"
 import { BrowserRouter,Route,Routes } from "react-router-dom";
 import CartPage from "./redux/CartPage";
+import LikedProducts from "./redux/LikedProducts";
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Navbar />  
+        <Navbar />
 
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/About" element={<About/>} />
-          <Route path="/Product" element={<Product/>}/>
-          <Route path="/Cartpage" element={<CartPage/>}/>
-         </Routes>
-        <Footer/>
+          <Route path="/About" element={<About />} />
+          <Route path="/Product" element={<Product />} />
+          <Route path="/Cartpage" element={<CartPage />} />
+          <Route path="/LikeProduct" element={<LikedProducts />} />
+        </Routes>
+        <Footer />
       </BrowserRouter>
       {/* <Navbar /> */}
       {/* <Main/> */}
       {/* <About/> */}
-    
+
       {/* <Footer /> */}
     </div>
   );

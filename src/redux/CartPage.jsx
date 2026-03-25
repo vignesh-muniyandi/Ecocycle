@@ -13,9 +13,9 @@ const CartPage = () => {
   return (
     <div>
       <div style={{ padding: "20px" }}>
-        <h2> your Cart</h2>
+        <h2 style={{ textAlign: "center" }}> your Cart</h2>
         {cycleCartItems.length === 0 ? (
-          <p>Your cart is Empty</p>
+          <p style={{ textAlign: "center" }}>Your cart is Empty</p>
         ) : (
           <>
             <table
@@ -78,6 +78,8 @@ const CartPage = () => {
                             +
                           </button>
                         </td>
+
+                        <td>{item.price * item.quantity}</td>
                         <td>
                           <button
                             onClick={() => dispatch(removeFromCart(item.id))}
@@ -91,7 +93,7 @@ const CartPage = () => {
                 )}
               </tbody>
             </table>
-            <h3> Total Amount :{totalAmount}</h3>
+            <h3 style={{ textAlign: "center" }}> Total Amount :{totalAmount}</h3>
           </>
         )}
       </div>

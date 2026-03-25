@@ -12,7 +12,7 @@ function Navbar() {
         <div className="nav-list">
           <ul className="nav-list-items">
             <li className="nav-item">
-              <Link to="/">Home</Link> 
+              <Link to="/">Home</Link>
             </li>
             <li className="nav-item">
               <Link to="/About">About</Link>
@@ -34,7 +34,14 @@ function Navbar() {
         </div>
 
         <div>
-          <button><Link to="/Cartpage">Add Cart</Link></button>
+          <button>
+            <Link to="/Cartpage">Add Cart</Link>
+          </button>
+        </div>
+        <div>
+          <button>
+            <Link to="/LikeProduct">LikeProduct</Link>
+          </button>
         </div>
       </div>
     </>
